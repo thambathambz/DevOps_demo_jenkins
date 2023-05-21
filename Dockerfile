@@ -21,6 +21,6 @@
 #----------------------------------------------------------------
 FROM openjdk:11
 #COPY /var/lib/jenkins/workspace/test-ci-pipeline/target/root.war app.war
-COPY /var/lib/jenkins/workspace/**/**.war app.war
+COPY **/**.war app.war
 
 ENTRYPOINT ["java","-jar","/app.war"]

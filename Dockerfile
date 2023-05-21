@@ -19,6 +19,6 @@
 # #CMD [ "sleep", "200" ]
 # CMD ["java", "-jar", "target/root.war"]
 #----------------------------------------------------------------
-FROM java:11
+FROM openjdk:11
 COPY /var/lib/jenkins/workspace/test-ci-pipeline/target/root.war app.war
 ENTRYPOINT ["java","-jar","/app.war"]
